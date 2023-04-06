@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  netcoreidentityapp:
+    image: ${DOCKER_REGISTRY-}netcoreidentityapp
+    build:
+      context: .
+      dockerfile: NetCoreIdentityApp/Dockerfile
+    depends_on:
+      - mssql
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    user: root
+    environment:
+      ACCEPT_EULA: "Y"
+    # MSSQL_PID: Developer
+      SA_PASSWORD: Secret1234..
+    ports: 
+    # host-port:container-port
+      -  1433:1433
+    #networks:
+    #  - api-network
+    restart: always
