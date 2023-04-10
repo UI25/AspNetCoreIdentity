@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj": {}
+    "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\AspNetCoreIdentity\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj": {
+    "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\AspNetCoreIdentity\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj",
+        "projectUniqueName": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\AspNetCoreIdentity\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj",
         "projectName": "NetCoreIdentityApp",
-        "projectPath": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj",
+        "projectPath": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\AspNetCoreIdentity\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj",
         "packagesPath": "C:\\Users\\ufuki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\NetCoreIdentityApp\\obj\\",
+        "outputPath": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\AspNetCoreIdentity\\NetCoreIdentityApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ufuki\\AppData\\Roaming\\NuGet\\NuGet.Config",

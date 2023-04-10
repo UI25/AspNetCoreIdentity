@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dHOsZ0WN2NsBBF1ay3GI3AfNT31hg8cclvd4EQRjnGiGD4pHwQNHBAxuOSC1ItTXhAe1diA8nQooXdFuLOC2bw==",
+  "dgSpecHash": "kWX7MiPhacMyyPRAYS5EUsr/NOxxVxU5DOb3qI88wKSSSQUiGQJRHhwZpk0zDQed/0Abu/0aqTTSibhcNpBzeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj",
+  "projectFilePath": "C:\\Users\\ufuki\\Desktop\\DELL-Documents\\Projects\\CoreRazorApp\\NetCoreIdentityApp\\AspNetCoreIdentity\\NetCoreIdentityApp\\NetCoreIdentityApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ufuki\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ufuki\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
