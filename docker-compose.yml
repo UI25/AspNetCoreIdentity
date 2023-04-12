@@ -9,24 +9,24 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
-      - 8000:80
+      - 8001:80
     networks:
       - api-network
     depends_on:
-      - mssql
-  mssql:
+      - web_mssql
+  web_mssql:
     container_name: mssql
     image: mcr.microsoft.com/mssql/server:2022-latest
     user: root
     environment:
       ACCEPT_EULA: "Y"
-    # MSSQL_PID: Developer
+      MSSQL_PID: Developer
       SA_PASSWORD: Secret1234..
     ports: 
     # host-port:container-port
       -  1433:1433
     volumes:
-      - /var/opt/mssql/data/
+      - sql1data:/var/opt/mssql
     networks:
       - api-network
     restart: always

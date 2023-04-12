@@ -1,0 +1,55 @@
+name: dockercompose11773020379208226527
+services:
+  mssql:
+    container_name: mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Secret1234..
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      api-network: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "1433"
+      protocol: tcp
+    restart: always
+    user: root
+    volumes:
+    - type: volume
+      target: /var/opt/mssql/data
+      volume: {}
+  netcoreidentityapp:
+    build:
+      context: C:\Users\ufuki\Desktop\DELL-Documents\Projects\CoreRazorApp\NetCoreIdentityApp\AspNetCoreIdentity
+      dockerfile: NetCoreIdentityApp/Dockerfile
+    depends_on:
+      mssql:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: netcoreidentityapp
+    networks:
+      api-network: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8000"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\ufuki\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\ufuki\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  api-network:
+    name: dockercompose11773020379208226527_api-network
+    driver: bridge

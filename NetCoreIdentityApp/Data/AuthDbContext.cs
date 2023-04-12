@@ -7,6 +7,7 @@ namespace NetCoreIdentityApp.Model
     {
         public AuthDbContext(DbContextOptions<AuthDbContext> options) :base(options) 
         {
+            
         }
        
     }
