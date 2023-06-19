@@ -33,8 +33,9 @@ namespace NetCoreIdentityApp.Pages
                 var result = await userManager.CreateAsync(user, Model.Password);
                 if (result.Succeeded)
                 {
-                    await singInManager.SignInAsync(user, false);
-                    return RedirectToPage("Index");
+                    //await singInManager.SignInAsync(user, false);
+                    //return RedirectToPage("Index");
+                    
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
